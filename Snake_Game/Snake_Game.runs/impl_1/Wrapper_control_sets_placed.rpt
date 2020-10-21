@@ -1,0 +1,72 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (lin64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Thu Nov 28 16:49:53 2019
+| Host         : tlb01.see.ed.ac.uk running 64-bit Scientific Linux release 7.6 (Nitrogen)
+| Command      : report_control_sets -verbose -file Wrapper_control_sets_placed.rpt
+| Design       : Wrapper
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    19 |
+| Minimum Number of register sites lost to control set restrictions |    63 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              67 |           21 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             113 |           34 |
+| Yes          | No                    | No                     |              99 |           25 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             138 |           34 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------+-------------------------------+-----------------------------------------+------------------+----------------+
+|  Clock Signal  |         Enable Signal         |             Set/Reset Signal            | Slice Load Count | Bel Load Count |
++----------------+-------------------------------+-----------------------------------------+------------------+----------------+
+|  CLK_IBUF_BUFG | snake/target_reached          | RESET_IBUF                              |                1 |              4 |
+|  CLK_IBUF_BUFG | counter/Bit4Counter2/E[0]     | RESET_IBUF                              |                1 |              4 |
+|  CLK_IBUF_BUFG |                               | uut/Vertical_counter/SR[0]              |                2 |              6 |
+|  CLK_IBUF_BUFG | TarGen/Y_reg[6]_i_1_n_0       |                                         |                1 |              6 |
+|  CLK_IBUF_BUFG | MSM/SnakeState_Y_reg[0][5][0] | RESET_IBUF                              |                3 |              6 |
+|  CLK_IBUF_BUFG |                               | uut/Horizontal_counter/SR[0]            |                2 |              7 |
+|  CLK_IBUF_BUFG | TarGen/p_0_in                 |                                         |                1 |              7 |
+|  CLK_IBUF_BUFG | MSM/E[0]                      | RESET_IBUF                              |                2 |              7 |
+|  CLK_IBUF_BUFG | uut/Horizontal_counter/HOut   |                                         |                4 |             10 |
+|  CLK_IBUF_BUFG | uut/Slow_Clk/slowClk          |                                         |                4 |             10 |
+|  CLK_IBUF_BUFG | snake/SecTimer/E[0]           |                                         |                4 |             11 |
+|  CLK_IBUF_BUFG |                               | uut/Vertical_counter/COLOUR_OUT_reg[11] |                5 |             12 |
+|  CLK_IBUF_BUFG | snake/winColour[0]_i_1_n_0    |                                         |                3 |             12 |
+|  CLK_IBUF_BUFG | MSM/currentX_reg_reg[1][0]    |                                         |                2 |             13 |
+|  CLK_IBUF_BUFG |                               | snake/Slow_Clk/count_value[27]_i_1_n_0  |                7 |             27 |
+|  CLK_IBUF_BUFG | LEDDisp/ENABLE                |                                         |                6 |             30 |
+|  CLK_IBUF_BUFG |                               | RESET_IBUF                              |               18 |             61 |
+|  CLK_IBUF_BUFG |                               |                                         |               21 |             67 |
+|  CLK_IBUF_BUFG | snake/Slow_Clk/E[0]           | RESET_IBUF                              |               27 |            117 |
++----------------+-------------------------------+-----------------------------------------+------------------+----------------+
+
+

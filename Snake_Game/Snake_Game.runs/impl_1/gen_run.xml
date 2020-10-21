@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1574959748">
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="PA-TCL" Name="Wrapper.tcl"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="OPT-DCP" Name="Wrapper_opt.dcp"/>
+  <File Type="OPT-DRC" Name="Wrapper_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Wrapper.hwdef"/>
+  <File Type="PWROPT-DCP" Name="Wrapper_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Wrapper_drc_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Wrapper_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Wrapper_io_placed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="Wrapper.bit"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Wrapper_timing_summary_routed.rpx"/>
+  <File Type="BG-BIN" Name="Wrapper.bin"/>
+  <File Type="BITSTR-MSK" Name="Wrapper.msk"/>
+  <File Type="ROUTE-CLK" Name="Wrapper_clock_utilization_routed.rpt"/>
+  <File Type="BG-BGN" Name="Wrapper.bgn"/>
+  <File Type="BITSTR-RBT" Name="Wrapper.rbt"/>
+  <File Type="BITSTR-NKY" Name="Wrapper.nky"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Wrapper_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-BMM" Name="Wrapper_bd.bmm"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="Wrapper.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Wrapper_postroute_physopt.dcp"/>
+  <File Type="BG-DRC" Name="Wrapper.drc"/>
+  <File Type="ROUTE-SIMILARITY" Name="Wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="Wrapper.mmi"/>
+  <File Type="PHYSOPT-DCP" Name="Wrapper_physopt.dcp"/>
+  <File Type="BITSTR-SYSDEF" Name="Wrapper.sysdef"/>
+  <File Type="PHYSOPT-DRC" Name="Wrapper_drc_physopted.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Wrapper_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="Wrapper_route_status.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="Wrapper_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="Wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="Wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-DCP" Name="Wrapper_routed.dcp"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="Wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="Wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Wrapper_clock_utilization_placed.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/Seg7Display.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../DigitalLab/new/Seg7Display.v"/>
+        <Attr Name="ImportTime" Val="1574913072"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Multiplixer4.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../DigitalLab/new/Multiplixer4.v"/>
+        <Attr Name="ImportTime" Val="1574913072"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Generic_counter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../DigitalLab/new/Generic_counter.v"/>
+        <Attr Name="ImportTime" Val="1574913070"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/LED_Display.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/VGA_interface.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../DigitalLab/new/VGA_interface.v"/>
+        <Attr Name="ImportTime" Val="1574913076"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Target_generator.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../DigitalLab/new/Target_generator.v"/>
+        <Attr Name="ImportTime" Val="1574913074"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Snake_ctrl.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../DigitalLab/new/Snake_ctrl.v"/>
+        <Attr Name="ImportTime" Val="1574913072"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/NavigationSM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../DigitalLab/new/NavigationSM.v"/>
+        <Attr Name="ImportTime" Val="1574913072"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/MasterSM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../DigitalLab/new/MasterSM.v"/>
+        <Attr Name="ImportTime" Val="1574913072"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Score_counter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../DigitalLab/new/Score_counter.v"/>
+        <Attr Name="ImportTime" Val="1574913072"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Wrapper.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../DigitalLab/new/Wrapper.v"/>
+        <Attr Name="ImportTime" Val="1574913076"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Downloads/snakeGame_constraints.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/snakeGame_constraints.xdc"/>
+        <Attr Name="ImportTime" Val="1574944912"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
